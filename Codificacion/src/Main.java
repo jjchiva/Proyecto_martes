@@ -15,7 +15,11 @@ public class Main {
         System.out.print("Introduce el mensaje a codificar\n> ");
         String mensaje = tec.nextLine();
         System.out.println("");
-        System.out.println("Mensaje codificado:\n" + codificador.codificar(mensaje));
+        String criptograma = codificador.codificar(mensaje);
+        System.out.println("Mensaje codificado:\n" + criptograma);
+        System.out.println("");
+        String mensajeDecodificado = codificador.decodificar(criptograma);
+        System.out.println("Mensaje decodificado:\n" + mensajeDecodificado);
         System.out.print("*****************************");
     }
 }
